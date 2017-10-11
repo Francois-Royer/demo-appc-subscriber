@@ -1,0 +1,11 @@
+{
+  "name": "appc-demo-subscripber",
+  "version": "1.0.0",
+  "description": "Demonstration subscriber for Appc pub-sub",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "8.x"
+  }
+}
