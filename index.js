@@ -33,7 +33,7 @@ function displayHistory (req, res) {
       jsonHistory.push(reqevent)
     }
   }
-  res.writeHead(200, {'Content-Type': 'application/json'})
+  res.writeHead(200, {'Content-Type': 'application/json; charset:UTF-8'})
   res.write(JSON.stringify(jsonHistory, null, 2))
   res.end()
 }
