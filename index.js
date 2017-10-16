@@ -33,9 +33,9 @@ function displayHistory (req, res) {
       jsonHistory.push(reqevent)
     }
   }
-  res.statusCode = 200
-  res.statusMessage = 'ok'
-  res.end(JSON.stringify(jsonHistory, null, 2), {'Content-Type': 'application/json'})
+  res.writeHead(200, {'Content-Type': 'application/json'})
+  res.write(JSON.stringify(jsonHistory, null, 2))
+  res.end()
 }
 
 const server = http.createServer((req, res) => {
